@@ -1,12 +1,11 @@
 import styled from "styled-components";
 import * as palette from "../../styles/variables";
-import cartEmpty from "../../assets/cart-empty.svg";
+import cartEmpty from "../../assets/header-icons/cart-empty.svg";
 
 export const HeaderContainer = styled.header`
   background-color: ${palette.HEADERBACKGROUNDCOLORDESKTOP};
   height: 10vh;
   display: flex;
-  border: 2px solid #000;
 `;
 export const HeaderContent = styled.main`
   display: flex;
