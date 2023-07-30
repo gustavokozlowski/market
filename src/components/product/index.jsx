@@ -1,5 +1,14 @@
 /* eslint-disable react/prop-types */
-import { ProductContainer} from "./styles";
+import {
+  ProductContainer,
+  ButtonContainer,
+  ProductContent,
+  PriceBefore,
+  PriceWithDiscount,
+  ProductImg,
+  ProductRating,
+  ProductName,
+} from "./styles";
 
 // "id": 1,
 // "title": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
@@ -11,11 +20,17 @@ import { ProductContainer} from "./styles";
 //   "rate": 3.9,
 //   "count": 120
 
-
-export const Product = ({product}) => {
+export const Product = ({ product }) => {
   return (
     <ProductContainer>
-        <p>{product}</p>
+      <ProductContent>
+        <ProductImg src={product?.image}/>
+        <ProductName>{product?.title}</ProductName>
+        <ProductRating />
+        <PriceBefore>R$5500,00</PriceBefore>
+        <PriceWithDiscount>{product?.price}</PriceWithDiscount>
+      </ProductContent>
+      <ButtonContainer></ButtonContainer>
     </ProductContainer>
   );
-}
+};

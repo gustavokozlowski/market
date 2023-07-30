@@ -8,9 +8,39 @@ export const ProductContainer = styled.main`
   width: 15vh;
   gap: 2rem;
 `;
-export const HeaderContent = styled.main`
+export const ProductContent = styled.div`
+  background-color: aliceblue;
+  height: 10vh;
   display: flex;
-  width: 100vw;
-  align-items: center;
-  justify-content: space-around;
-  `;
+  width: 15vh;
+  gap: 2rem;
+`;
+export const ButtonContainer = styled.main`
+  background-color: yellow;
+  height: 10vh;
+  display: flex;
+  width: 15vh;
+  gap: 2rem;
+`;
+
+export const ProductImg = styled.img`
+  width: 40%;
+  height: 40%;
+`;
+export const ProductRating = styled.img`
+  width: 40%;
+  height: 40%;
+`;
+
+export const ProductName = styled.h1`
+  color: ${palette.COLORTITLESESSION};
+  font-size: 2rem;
+`;
+export const PriceBefore = styled.h1`
+  color: ${palette.COLORPRICEBEFORE};
+  font-size: 1.2rem;
+`;
+export const PriceWithDiscount = styled.h1`
+  color: ${palette.COLORTITLESESSION};
+  font-size: 1.7rem;
+`;
