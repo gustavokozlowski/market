@@ -27,7 +27,7 @@ export const Slider = () => {
       {dataSlider.map((obj) => {
         return (
           <SliderContent key={obj.id}>
-            <SliderImg onClick={nextSlide}  src={`/slide-img/slides=slide${slideIndex}.png`} />
+            <SliderImg src={`/slide-img/slides=slide${slideIndex}.png`} />
           </SliderContent>
         );
       })}
