@@ -26,9 +26,9 @@ export const Product = ({ product }) => {
       <ProductContent>
         <ProductImg src={product?.image}/>
         <ProductName>{product?.title}</ProductName>
-        <ProductRating />
+        {/* <ProductRating /> */}
         <PriceBefore>R$5500,00</PriceBefore>
-        <PriceWithDiscount>{product?.price}</PriceWithDiscount>
+        <PriceWithDiscount>R${product?.price}</PriceWithDiscount>
       </ProductContent>
       <ButtonContainer></ButtonContainer>
     </ProductContainer>
