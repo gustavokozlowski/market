@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import * as palette from "../../styles/variables";
-import cartEmpty from "../../assets/header-icons/cart-empty.svg";
+import empty from "../../assets/cart-icons/empty.svg";
+import full from "../../assets/cart-icons/full.svg";
 
 export const HeaderContainer = styled.header`
   background-color: ${palette.HEADERBACKGROUNDCOLORDESKTOP};
@@ -51,5 +52,5 @@ export const MyIcon = styled.img`
 `;
 
 MyIcon.defaultProps = {
-  src: cartEmpty,
+  src: empty || full,
 };

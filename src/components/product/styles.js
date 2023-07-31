@@ -6,7 +6,7 @@ export const ProductContainer = styled.main`
 
 flex-direction: column;
   /* background-color: blueviolet; */
-  height: 50vh;
+  height: 53vh;
   display: flex;
   text-align: center;
   border-radius: 6px;
@@ -25,34 +25,38 @@ export const ProductContent = styled.div`
   flex-direction: column;
   gap: 1rem;
 `;
-export const ButtonContainer = styled.main`
-  background-color: yellow;
-  height: 25vh;
+export const ButtonContainer = styled.div`
+  /* background-color: yellow; */
+  height: 30vh;
   display: flex;
   width: 15vw;
   border-radius: 6px;
+  align-items: center;
+  justify-content: center;
+  
 `;
 
 export const ProductImg = styled.img`
-  height: 50%;
+  height: 60%;
+  padding: 1rem;
   border-radius: 6px;
 `;
 export const ProductRating = styled.img`
-  width: 10rem;
+  width: 8rem;
 `;
 
 export const ProductName = styled.h1`
   color: ${palette.COLORTITLESESSION};
-  font-size: 1.2rem;
+  font-size: 1rem;
 `;
 export const PriceBefore = styled.h1`
   color: ${palette.COLORPRICEBEFORE};
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   text-decoration: line-through;
 `;
 export const PriceWithDiscount = styled.h1`
   color: ${palette.COLORTITLESESSION};
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 `;
 
 // export const StarRating = styled.img`

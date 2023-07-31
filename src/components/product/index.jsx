@@ -1,4 +1,5 @@
 /* eslint-disable react/prop-types */
+import { Button } from "../button/normal";
 import {
   ProductContainer,
   ButtonContainer,
@@ -24,13 +25,15 @@ export const Product = ({ product }) => {
   return (
     <ProductContainer>
       <ProductContent>
-        <ProductImg src={product?.image}/>
+        <ProductImg src={product?.image} />
         <ProductName>{product?.title}</ProductName>
         <ProductRating />
         <PriceBefore>R$5500,00</PriceBefore>
-        <PriceWithDiscount>R${product?.price}</PriceWithDiscount>
+        <PriceWithDiscount>R${product?.price.toFixed(2)}</PriceWithDiscount>
       </ProductContent>
-      <ButtonContainer></ButtonContainer>
+      <ButtonContainer>
+        <Button value="Comprar" />
+      </ButtonContainer>
     </ProductContainer>
   );
 };

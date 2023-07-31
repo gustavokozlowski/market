@@ -26,7 +26,7 @@ export const ProductListContent = styled.main`
 
 export const TitleSession = styled.h1`
   color: ${palette.COLORTITLESESSION};
-  font-size: 2.6rem;
+  font-size: 2.2rem;
   margin: 4rem 0 0 0;
   line-height: 2.5rem;
   font-weight: 700;
