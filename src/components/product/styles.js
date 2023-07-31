@@ -3,17 +3,14 @@ import * as palette from "../../styles/variables";
 import Rating from "../../assets/rating-icons/star-rating.svg";
 
 export const ProductContainer = styled.main`
-
-flex-direction: column;
+  flex-direction: column;
   /* background-color: blueviolet; */
   height: 53vh;
   display: flex;
-  text-align: center;
-  border-radius: 6px;
+  border-radius: 10px;
   align-items: center;
   box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.25);
   box-sizing: border-box;
-
 `;
 export const ProductContent = styled.div`
   /* background-color: aliceblue; */
@@ -24,23 +21,23 @@ export const ProductContent = styled.div`
   width: 15vw;
   flex-direction: column;
   gap: 1rem;
+  text-align: center;
 `;
 export const ButtonContainer = styled.div`
   /* background-color: yellow; */
-
   display: flex;
+  height: 10vh;
   width: 15vw;
   gap: 1rem;
   border-radius: 6px;
   align-items: center;
   justify-content: center;
-  
 `;
 
 export const ProductImg = styled.img`
   height: 60%;
   padding: 1rem;
-  border-radius: 6px;
+  border-radius: 10px;
 `;
 export const ProductRating = styled.img`
   width: 8rem;
@@ -49,6 +46,7 @@ export const ProductRating = styled.img`
 export const ProductName = styled.h1`
   color: ${palette.COLORTITLESESSION};
   font-size: 1rem;
+  font-weight: bolder;
 `;
 export const PriceBefore = styled.h1`
   color: ${palette.COLORPRICEBEFORE};
