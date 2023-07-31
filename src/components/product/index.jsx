@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import { Button } from "../button/normal";
+import { ButtonPlus } from "../button/plus";
 import {
   ProductContainer,
   ButtonContainer,
@@ -33,6 +34,7 @@ export const Product = ({ product }) => {
       </ProductContent>
       <ButtonContainer>
         <Button value="Comprar" />
+        <ButtonPlus />
       </ButtonContainer>
     </ProductContainer>
   );

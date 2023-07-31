@@ -27,9 +27,10 @@ export const ProductContent = styled.div`
 `;
 export const ButtonContainer = styled.div`
   /* background-color: yellow; */
-  height: 30vh;
+
   display: flex;
   width: 15vw;
+  gap: 1rem;
   border-radius: 6px;
   align-items: center;
   justify-content: center;

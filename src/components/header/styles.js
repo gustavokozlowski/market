@@ -37,16 +37,16 @@ export const Title = styled.h1`
   background: ${palette.HEADERCOLORTITLE};
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 1.8rem;
+  font-size: 2.2rem;
   font-weight: bolder;
 `;
 export const Text = styled.p`
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 600;
 `;
 
 export const MyIcon = styled.img`
-  width: 2rem;
+  width: 2.2rem;
   /* background-color: aliceblue; */
   /* <MyIcon src="/path/to/sourceImage" /> // uses "/path/to/sourceImage" */
 `;
