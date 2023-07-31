@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import * as palette from "../../styles/variables";
+import Rating from "../../assets/rating-icons/star-rating.svg";
 
 export const ProductContainer = styled.main`
 
@@ -37,8 +38,7 @@ export const ProductImg = styled.img`
   border-radius: 6px;
 `;
 export const ProductRating = styled.img`
-  width: 40%;
-  height: 40%;
+  width: 10rem;
 `;
 
 export const ProductName = styled.h1`
@@ -54,3 +54,13 @@ export const PriceWithDiscount = styled.h1`
   color: ${palette.COLORTITLESESSION};
   font-size: 1.6rem;
 `;
+
+// export const StarRating = styled.img`
+//   width: 2rem;
+//   /* background-color: aliceblue; */
+//   /* <MyIcon src="/path/to/sourceImage" /> // uses "/path/to/sourceImage" */
+// `;
+
+ProductRating.defaultProps = {
+  src: Rating,
+};
