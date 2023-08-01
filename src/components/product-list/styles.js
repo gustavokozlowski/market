@@ -6,6 +6,7 @@ export const ProductListSection = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
+
 `;
 export const SeeMoreContainer  = styled.div`
   height: 2.7vh;

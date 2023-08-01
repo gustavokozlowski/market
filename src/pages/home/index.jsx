@@ -5,8 +5,24 @@ import { useState, useEffect } from "react";
 
 export const Home = () => {
   const [products, setProducts] = useState([]);
+  const [ active, setActive] = useState(false);
+
+  const handleChange = () =>{
+      setActive(!active)    
+  }
+
   useEffect(() => {
-    api.get("/products/?limit=4")
+    if( active === false){
+      api.get("/products/?limit=4")
+      .then((response) => {
+        console.log(response);
+        setProducts(response.data);
+      })
+      .catch((err) => {
+        console.error(`ops! ocorreu um erro : ${err}`);
+      });
+    } else {
+      api.get("/products/?limit=8")
       .then((response) => {
         console.log(response);
         setProducts(response.data);
@@ -14,12 +30,14 @@ export const Home = () => {
       .catch((err) => {
         console.error("ops! ocorreu um erro : " + err);
       });
-  }, []);
+    }
+      
+  }, [active]);
 
   return (
     <>
       <Slider />
-      <ProductList products={products} />
+      <ProductList onClick={handleChange} products={products} active={active} />
     </>
   );
 };

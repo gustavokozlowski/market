@@ -5,19 +5,21 @@ import Rating from "../../assets/rating-icons/star-rating.svg";
 export const ProductContainer = styled.main`
   flex-direction: column;
   /* background-color: blueviolet; */
-  height: 53vh;
+
   display: flex;
   border-radius: 10px;
   align-items: center;
+  width: 15vw;
   box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.25);
   box-sizing: border-box;
 `;
 export const ProductContent = styled.div`
+
   /* background-color: aliceblue; */
   align-items: center;
   justify-content: center;
   display: flex;
-  height: 45vh;
+  height: 35vh;
   width: 15vw;
   flex-direction: column;
   gap: 1rem;
@@ -26,7 +28,7 @@ export const ProductContent = styled.div`
 export const ButtonContainer = styled.div`
   /* background-color: yellow; */
   display: flex;
-  height: 10vh;
+  height: 8vh;
   width: 15vw;
   gap: 1rem;
   border-radius: 6px;
@@ -35,9 +37,9 @@ export const ButtonContainer = styled.div`
 `;
 
 export const ProductImg = styled.img`
-  height: 60%;
-  padding: 1rem;
+  height: 40%;
   border-radius: 10px;
+ 
 `;
 export const ProductRating = styled.img`
   width: 8rem;
