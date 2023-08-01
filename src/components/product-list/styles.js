@@ -2,7 +2,8 @@ import styled from "styled-components";
 import * as palette from "../../styles/variables";
 
 export const ProductListSection = styled.section`
-  height: 100vh;
+  z-index: 20;
+  height: fit-content;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -37,7 +38,7 @@ export const TitleSession = styled.h1`
   margin: 4rem 0 0 0;
   line-height: 2.5rem;
   font-weight: 700;
-  margin-bottom: 4rem ;
+  margin-bottom: 4rem;
 `;
 export const Text = styled.p`
    background: ${palette.HEADERCOLORTITLE};

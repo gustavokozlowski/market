@@ -2,42 +2,44 @@ import { api } from "../../services/api/api";
 import { ProductList } from "../../components/product-list";
 import { Slider } from "../../components/slider";
 import { useState, useEffect } from "react";
+import { FormComponent } from "../../components/form";
+import { HomeContainer
+} from "./styles";
 
 export const Home = () => {
   const [products, setProducts] = useState([]);
-  const [ active, setActive] = useState(false);
+  const [active, setActive] = useState(false);
 
-  const handleChange = () =>{
-      setActive(!active)    
-  }
-
+  const handleClick = () => {
+    setActive(!active);
+  };
   useEffect(() => {
-    if( active === false){
-      api.get("/products/?limit=4")
-      .then((response) => {
-        console.log(response);
-        setProducts(response.data);
-      })
-      .catch((err) => {
-        console.error(`ops! ocorreu um erro : ${err}`);
-      });
+    if (active === false) {
+     api
+        .get("/products/?limit=4")
+        .then((response) => {
+          setProducts(response.data);
+        })
+        .catch((err) => {
+          console.error(`ops! ocorreu um erro : ${err}`);
+        });
     } else {
-      api.get("/products/?limit=8")
-      .then((response) => {
-        console.log(response);
-        setProducts(response.data);
-      })
-      .catch((err) => {
-        console.error("ops! ocorreu um erro : " + err);
-      });
+      api
+        .get("/products/?limit=8")
+        .then((response) => {
+          setProducts(response.data);
+        })
+        .catch((err) => {
+          console.error("ops! ocorreu um erro : " + err);
+        });
     }
-      
   }, [active]);
 
   return (
-    <>
+    <HomeContainer>
       <Slider />
-      <ProductList onClick={handleChange} products={products} active={active} />
-    </>
+      <ProductList onClick={handleClick} products={products} active={active} />
+      <FormComponent />
+    </HomeContainer>
   );
 };
