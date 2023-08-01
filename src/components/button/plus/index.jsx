@@ -1,8 +1,9 @@
+/* eslint-disable react/prop-types */
 import { ButtonContainer, IconCartPlus } from "./styles";
 
-export const ButtonPlus = () => {
+export const ButtonPlus = ({handleClick}) => {
   return (
-    <ButtonContainer>
+    <ButtonContainer onClick={handleClick} >
       <IconCartPlus />
     </ButtonContainer>
   );

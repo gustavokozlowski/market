@@ -1,6 +1,10 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
+
 import { Button } from "../button/normal";
 import { ButtonPlus } from "../button/plus";
+import { CartContext } from "../../contexts/cart.jsx";
+import { useContext } from 'react';
 import {
   ProductContainer,
   ButtonContainer,
@@ -23,6 +27,7 @@ import {
 //   "count": 120
 
 export const Product = ({ product }) => {
+  const { cartItems, addToCart } = useContext(CartContext)
   return (
     <ProductContainer>
       <ProductContent>
@@ -34,7 +39,7 @@ export const Product = ({ product }) => {
       </ProductContent>
       <ButtonContainer>
         <Button value="Comprar" />
-        <ButtonPlus />
+        <ButtonPlus handleClick={() => addToCart(product)} />
       </ButtonContainer>
     </ProductContainer>
   );
