@@ -37,7 +37,7 @@ export const ButtonContainer = styled.div`
 
 export const ProductImg = styled.img`
   padding: 0.75rem;
-  height: 10rem;
+  height: 12rem;
   width: 14rem;
   border-radius: 12px;
 `;

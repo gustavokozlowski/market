@@ -38,7 +38,6 @@ export const Home = () => {
     <HomeContainer>
       <Slider />
       <ProductList onClick={handleClick} products={products} active={active} />
-
       <FormComponent />
     </HomeContainer>
   );

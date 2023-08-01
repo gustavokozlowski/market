@@ -1,7 +1,5 @@
 import styled from "styled-components";
 import * as palette from "../../styles/variables";
-import empty from "../../assets/cart-icons/empty.svg";
-import full from "../../assets/cart-icons/full.svg";
 
 export const HeaderContainer = styled.header`
   background-color: ${palette.HEADERBACKGROUNDCOLORDESKTOP};
@@ -37,20 +35,17 @@ export const Title = styled.h1`
   background: ${palette.HEADERCOLORTITLE};
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 2.2rem;
+  font-size: 2.5rem;
   font-weight: bolder;
 `;
 export const Text = styled.p`
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: 600;
 `;
 
-export const MyIcon = styled.img`
-  width: 2.2rem;
+export const CartIcon = styled.img`
+  width: 2.5rem;
   /* background-color: aliceblue; */
   /* <MyIcon src="/path/to/sourceImage" /> // uses "/path/to/sourceImage" */
 `;
 
-MyIcon.defaultProps = {
-  src: empty || full,
-};

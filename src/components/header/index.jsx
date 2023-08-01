@@ -1,3 +1,7 @@
+import { CartContext } from "../../contexts/cart.jsx";
+import { useContext } from 'react';
+import   empty  from "../../assets/cart-icons/empty.svg";
+import   full  from "../../assets/cart-icons/full.svg";
 import {
   HeaderContainer,
   HeaderContent,
@@ -5,11 +9,12 @@ import {
   Text,
   NavbarContainer,
   NavbarContent,
-  MyIcon,
+  CartIcon,
   LogoContainer,
 } from "./styles";
 
 export const Header = () => {
+  const { cartItems  } = useContext(CartContext);
   return (
     <HeaderContainer>
       <HeaderContent>
@@ -20,7 +25,12 @@ export const Header = () => {
           <NavbarContent>
             <Text>Produtos</Text>
             <Text>Contato</Text>
-            <MyIcon />
+            { cartItems.length > 0 ? (
+               <CartIcon src={full}  />
+          ) : (
+            <CartIcon src={empty}  />
+          )}
+            
           </NavbarContent>
         </NavbarContainer>
       </HeaderContent>
