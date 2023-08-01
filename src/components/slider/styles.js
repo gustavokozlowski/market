@@ -2,9 +2,9 @@ import styled from "styled-components";
 
 export const SliderContainer = styled.div`
   height: 60vh;
-  width: auto;
   overflow: hidden;
   position: relative;
+  margin-bottom: 5rem;
 `;
 export const SliderContent = styled.main`
   width: 100vw;
@@ -12,7 +12,8 @@ export const SliderContent = styled.main`
   position: absolute;
 `;
 export const SliderImg = styled.img`
-  width: 100%;
+  width: 100vw;
   height: 100%;
+  object-fit: contain;
   
 `;

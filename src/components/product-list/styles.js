@@ -2,7 +2,6 @@ import styled from "styled-components";
 import * as palette from "../../styles/variables";
 
 export const ProductListSection = styled.section`
-  z-index: 20;
   height: fit-content;
   display: flex;
   flex-direction: column;

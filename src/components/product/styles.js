@@ -22,7 +22,7 @@ export const ProductContent = styled.div`
   height: 40vh;
   width: 15vw;
   flex-direction: column;
-  gap: 0.8rem;
+  gap: 1rem;
   text-align: center;
 `;
 export const ButtonContainer = styled.div`
@@ -32,14 +32,13 @@ export const ButtonContainer = styled.div`
   width: 15vw;
   gap: 1rem;
   border-radius: 6px;
-  align-items: center;
   justify-content: center;
 `;
 
 export const ProductImg = styled.img`
   padding: 0.75rem;
-  height: 15.82rem;
-  width: 15.5rem;
+  height: 10rem;
+  width: 14rem;
   border-radius: 12px;
 `;
 export const ProductRating = styled.img`
