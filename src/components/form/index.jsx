@@ -9,7 +9,7 @@ export const FormComponent = () => {
   const { register, handleSubmit } = useForm();
   const onSubmit = (data) => console.log(data)
   return (
-    <FormContainer>
+    <FormContainer id="contact">
       <FormContent>
       <Form onSubmit={handleSubmit(onSubmit)} >
         <Title>Entre em contato</Title>

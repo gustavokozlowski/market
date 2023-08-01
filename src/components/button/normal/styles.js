@@ -11,7 +11,7 @@ export const ButtonContainer = styled.button`
   align-items: center;
   border-radius: 50px;
   &:hover {
-      transform: "scale(1.1)"// Scale by 10%
+      transform: scale(1.05);
   }
 `;
 
