@@ -4,13 +4,16 @@ import App from "./App.jsx";
 import GlobalStyle from "./styles/global";
 import { Header } from "./components/header/index.jsx";
 import { CartProvider } from "./contexts/cart.jsx";
+import { BrowserRouter } from "react-router-dom";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
+    <Header />
     <CartProvider>
-      <Header />
+    <BrowserRouter>
       <App />
       <GlobalStyle />
+    </BrowserRouter>
     </CartProvider>
   </React.StrictMode>
 );
