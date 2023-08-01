@@ -7,6 +7,7 @@ export const ProductListSection = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: aliceblue;
 
 `;
 export const SeeMoreContainer  = styled.div`
@@ -18,10 +19,9 @@ export const SeeMoreContainer  = styled.div`
 `;
 export const ProductListContainer = styled.div`
   /* background-color: orange; */
-  height: 100vh;
+  height: fit-content;
   display: flex;
   flex-direction: column;
-  
 `;
 
 export const ProductListContent = styled.main`
@@ -35,8 +35,6 @@ export const ProductListContent = styled.main`
 export const TitleSession = styled.h1`
   color: ${palette.COLORTITLESESSION};
   font-size: 2.2rem;
-  margin: 4rem 0 0 0;
-  line-height: 2.5rem;
   font-weight: 700;
   margin-bottom: 4rem;
 `;

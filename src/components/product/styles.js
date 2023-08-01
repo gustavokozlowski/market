@@ -19,10 +19,10 @@ export const ProductContent = styled.div`
   align-items: center;
   justify-content: center;
   display: flex;
-  height: 35vh;
+  height: 40vh;
   width: 15vw;
   flex-direction: column;
-  gap: 1rem;
+  gap: 0.8rem;
   text-align: center;
 `;
 export const ButtonContainer = styled.div`
@@ -37,9 +37,10 @@ export const ButtonContainer = styled.div`
 `;
 
 export const ProductImg = styled.img`
-  height: 40%;
-  border-radius: 10px;
- 
+  padding: 0.75rem;
+  height: 15.82rem;
+  width: 15.5rem;
+  border-radius: 12px;
 `;
 export const ProductRating = styled.img`
   width: 8rem;
