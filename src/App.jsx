@@ -1,12 +1,13 @@
 
-import { MainRouter } from "./router";
-import { BrowserRouter } from "react-router-dom";
+import { RouterContainer } from "./router";
+
 
 function App() {
   return (
-    <BrowserRouter>
-      <MainRouter />
-    </BrowserRouter>
+    <>
+      <RouterContainer />
+    </>
+   
   );
 }
 

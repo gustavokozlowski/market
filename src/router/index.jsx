@@ -4,7 +4,7 @@ import { Routes, Route, BrowserRouter } from "react-router-dom";
 import { Home } from "../pages/home";
 import { Cart } from "../pages/cart";
 
-export const MainRouter = () => {
+export const RouterContainer = () => {
   return (
     <BrowserRouter>
     <Routes>

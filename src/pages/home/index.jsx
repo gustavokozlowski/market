@@ -3,8 +3,7 @@ import { ProductList } from "../../components/product-list";
 import { Slider } from "../../components/slider";
 import { useState, useEffect } from "react";
 import { FormComponent } from "../../components/form";
-import { HomeContainer
-} from "./styles";
+import { HomeContainer } from "./styles";
 
 export const Home = () => {
   const [products, setProducts] = useState([]);
@@ -15,7 +14,7 @@ export const Home = () => {
   };
   useEffect(() => {
     if (active === false) {
-     api
+      api
         .get("/products/?limit=4")
         .then((response) => {
           setProducts(response.data);
@@ -39,7 +38,7 @@ export const Home = () => {
     <HomeContainer>
       <Slider />
       <ProductList onClick={handleClick} products={products} active={active} />
-      
+
       <FormComponent />
     </HomeContainer>
   );
