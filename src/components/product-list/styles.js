@@ -7,7 +7,7 @@ export const ProductListSection = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: aliceblue;
+  /* background-color: aliceblue; */
 
 `;
 export const SeeMoreContainer  = styled.div`
