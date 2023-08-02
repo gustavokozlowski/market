@@ -5,7 +5,6 @@ import Rating from "../../assets/rating-icons/star-rating.svg";
 export const ProductContainer = styled.main`
   flex-direction: column;
   /* background-color: blueviolet; */
-
   display: flex;
   border-radius: 10px;
   align-items: center;
@@ -14,7 +13,6 @@ export const ProductContainer = styled.main`
   box-sizing: border-box;
 `;
 export const ProductContent = styled.div`
-
   /* background-color: aliceblue; */
   align-items: center;
   justify-content: center;
@@ -59,13 +57,6 @@ export const PriceWithDiscount = styled.h1`
   color: ${palette.COLORTITLESESSION};
   font-size: 1.4rem;
 `;
-
-// export const StarRating = styled.img`
-//   width: 2rem;
-//   /* background-color: aliceblue; */
-//   /* <MyIcon src="/path/to/sourceImage" /> // uses "/path/to/sourceImage" */
-// `;
-
 ProductRating.defaultProps = {
   src: Rating,
 };
