@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import * as palette from "../../styles/variables";
-import Rating from "../../assets/rating-icons/star-rating.svg";
+import { Rating } from '@smastrom/react-rating';
+// import Rating from "../../assets/rating-icons/star-rating.svg";
 
 export const ProductContainer = styled.main`
   flex-direction: column;
@@ -20,13 +21,13 @@ export const ProductContent = styled.div`
   height: 40vh;
   width: 15vw;
   flex-direction: column;
-  gap: 1rem;
+  gap: 0.5rem;
   text-align: center;
 `;
 export const ButtonContainer = styled.div`
   /* background-color: yellow; */
   display: flex;
-  height: 8vh;
+  height: 10vh;
   width: 15vw;
   gap: 1rem;
   border-radius: 6px;
@@ -35,12 +36,12 @@ export const ButtonContainer = styled.div`
 
 export const ProductImg = styled.img`
   padding: 0.75rem;
-  height: 12rem;
-  width: 14rem;
+  height: 10rem;
+  width: 10rem;
   border-radius: 12px;
 `;
-export const ProductRating = styled.img`
-  width: 8rem;
+export const ProductRating = styled(Rating)`
+  width: 7rem;
 `;
 
 export const ProductName = styled.h1`

@@ -5,6 +5,10 @@ import { Button } from "../button/normal";
 import { ButtonPlus } from "../button/plus";
 import { CartContext } from "../../contexts/cart.jsx";
 import { useContext } from 'react';
+// import  Rating  from 'react-rating';
+import { Rating } from '@smastrom/react-rating';
+
+
 import {
   ProductContainer,
   ButtonContainer,
@@ -33,7 +37,10 @@ export const Product = ({ product }) => {
       <ProductContent>
         <ProductImg src={product?.image} />
         <ProductName>{product?.title}</ProductName>
-        <ProductRating />
+        <ProductRating 
+          value={product?.rating.rate}
+          readOnly
+            />
         <PriceBefore>R$5500,00</PriceBefore>
         <PriceWithDiscount>R${product?.price.toFixed(2)}</PriceWithDiscount>
       </ProductContent>
