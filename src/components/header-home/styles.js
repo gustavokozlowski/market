@@ -1,24 +1,26 @@
 import styled from "styled-components";
+import { HashLink } from "react-router-hash-link";
 import * as palette from "../../styles/variables";
 
 export const HeaderContainer = styled.header`
   background-color: ${palette.HEADERBACKGROUNDCOLORDESKTOP};
   height: 10vh;
   display: flex;
+  position: fixed;
+  z-index: 100;
 `;
 export const HeaderContent = styled.main`
   display: flex;
   width: 100vw;
   align-items: center;
   justify-content: space-around;
-  `;
-  export const LogoContainer = styled.div`
-    /* background-color: orange; */
-    width: 40vw ;
-    display: flex;
-    align-items: center;
-    
-  `;
+`;
+export const LogoContainer = styled.div`
+  /* background-color: orange; */
+  width: 40vw;
+  display: flex;
+  align-items: center;
+`;
 export const NavbarContainer = styled.div`
   /* background-color: aqua; */
   display: flex;
@@ -38,14 +40,21 @@ export const Title = styled.h1`
   font-size: 2.5rem;
   font-weight: bolder;
 `;
-export const Text = styled.p`
-  font-size: 1.6rem;
+export const StyledHashLink = styled(HashLink)`
+  color: #000;
+  font-size: 1.4rem;
   font-weight: 600;
+  text-decoration: none;
+  &:hover {
+    cursor: pointer;
+  }
 `;
 
 export const CartIcon = styled.img`
-  width: 2.5rem;
+  width: 2.2rem;
+  &:hover {
+    cursor: pointer;
+  }
   /* background-color: aliceblue; */
   /* <MyIcon src="/path/to/sourceImage" /> // uses "/path/to/sourceImage" */
 `;
-

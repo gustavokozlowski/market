@@ -10,7 +10,7 @@ import {
 /* eslint-disable react/prop-types */
 export const ProductList = ({ products, onClick, active }) => {
   return (
-    <ProductListSection id="product">
+    <ProductListSection>
       <ProductListContainer>
         <TitleSession>Produtos</TitleSession>
         <ProductListContent>

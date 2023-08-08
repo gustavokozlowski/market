@@ -16,11 +16,10 @@ export const Slider = () => {
   };
 
   useEffect(() => {
-     setTimeout(() => {
+    setTimeout(() => {
       nextSlide();
     }, 3000);
   }, [nextSlide, slideIndex]);
-
 
   return (
     <SliderContainer>

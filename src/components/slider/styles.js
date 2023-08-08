@@ -4,12 +4,13 @@ export const SliderContainer = styled.div`
   height: 60vh;
   overflow: hidden;
   position: relative;
-  margin-bottom: 5rem;
+  margin-top: 5rem;
+
 `;
 export const SliderContent = styled.main`
   width: 100vw;
   height: 100%;
-  position: absolute;
+
 `;
 export const SliderImg = styled.img`
   width: 100vw;

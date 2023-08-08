@@ -7,3 +7,6 @@ export const HomeContainer = styled.div`
   flex-direction: column;
   gap: 2rem;
 `;
+export const Section = styled.section`
+  
+`;

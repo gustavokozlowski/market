@@ -3,7 +3,7 @@ import { ProductList } from "../../components/product-list";
 import { Slider } from "../../components/slider";
 import { useState, useEffect } from "react";
 import { FormComponent } from "../../components/form";
-import { HomeContainer } from "./styles";
+import { HomeContainer, Section } from "./styles";
 
 export const Home = () => {
   const [products, setProducts] = useState([]);
@@ -37,8 +37,16 @@ export const Home = () => {
   return (
     <HomeContainer>
       <Slider />
-      <ProductList onClick={handleClick} products={products} active={active} />
-      <FormComponent />
+      <Section id="products">
+        <ProductList
+          onClick={handleClick}
+          products={products}
+          active={active}
+        />
+      </Section>
+      <Section id="contact">
+        <FormComponent />
+      </Section>
     </HomeContainer>
   );
 };

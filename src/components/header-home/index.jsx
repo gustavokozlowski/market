@@ -1,20 +1,25 @@
 import { CartContext } from "../../contexts/cart.jsx";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import empty from "../../assets/cart-icons/empty.svg";
 import full from "../../assets/cart-icons/full.svg";
 import {
   HeaderContainer,
   HeaderContent,
   Title,
-  Text,
   NavbarContainer,
   NavbarContent,
   CartIcon,
   LogoContainer,
+  StyledHashLink
 } from "./styles.js";
+
 
 export const HeaderHome = () => {
   const { cartItems } = useContext(CartContext);
+ 
+  useEffect(() => {
+  }, [cartItems])
+  
   return (
     <HeaderContainer>
       <HeaderContent>
@@ -23,8 +28,8 @@ export const HeaderHome = () => {
         </LogoContainer>
         <NavbarContainer>
           <NavbarContent>
-            <Text>Produtos</Text>
-            <Text>Contato</Text>
+            <StyledHashLink smooth to="/#products">Produtos</StyledHashLink>
+            <StyledHashLink smooth to="/#contact" >Contato</StyledHashLink>
             {cartItems.length > 0 ? (
               <CartIcon src={full} />
             ) : (

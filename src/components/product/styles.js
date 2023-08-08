@@ -47,7 +47,7 @@ export const ProductRating = styled(Rating)`
 export const ProductName = styled.h1`
   color: ${palette.COLORTITLESESSION};
   font-size: 1rem;
-  font-weight: bolder;
+
 `;
 export const PriceBefore = styled.h1`
   color: ${palette.COLORPRICEBEFORE};
