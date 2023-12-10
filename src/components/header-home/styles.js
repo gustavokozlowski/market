@@ -4,10 +4,9 @@ import * as palette from "../../styles/variables";
 
 export const HeaderContainer = styled.header`
   background-color: ${palette.HEADERBACKGROUNDCOLORDESKTOP};
-  height: 10vh;
+  height: 12vh;
   display: flex;
-  position: fixed;
-  z-index: 100;
+
 `;
 export const HeaderContent = styled.main`
   display: flex;

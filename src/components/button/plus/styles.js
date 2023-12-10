@@ -4,8 +4,8 @@ import * as palette from "../../../styles/variables";
 
 export const ButtonContainer = styled.button`
   background:  linear-gradient(#fff, #fff) padding-box, ${palette.HEADERCOLORTITLE} border-box;
-  height: 5vh;
-  width: 5vw;
+  height: 40px;
+  width: 95px;
   display: flex;
   padding: 1rem;
   justify-content: center;
@@ -15,7 +15,7 @@ export const ButtonContainer = styled.button`
 `;
 
 export const IconCartPlus = styled.img`
-  width: 2.5rem;
+  width: 30px;
   /* background-color: aliceblue; */
   /* <MyIcon src="/path/to/sourceImage" /> // uses "/path/to/sourceImage" */
 `;

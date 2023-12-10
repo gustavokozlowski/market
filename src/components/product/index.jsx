@@ -4,10 +4,8 @@
 import { Button } from "../button/normal";
 import { ButtonPlus } from "../button/plus";
 import { CartContext } from "../../contexts/cart.jsx";
-import { useContext } from 'react';
-// import  Rating  from 'react-rating';
-import { Rating } from '@smastrom/react-rating';
-
+import { useContext } from "react";
+//
 
 import {
   ProductContainer,
@@ -20,27 +18,21 @@ import {
   ProductName,
 } from "./styles";
 
-// "id": 1,
-// "title": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
-// "price": 109.95,
-// "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
-// "category": "men's clothing",
-// "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
-// "rating": {
-//   "rate": 3.9,
-//   "count": 120
 
 export const Product = ({ product }) => {
-  const { cartItems, addToCart } = useContext(CartContext)
+  const { addToCart } = useContext(CartContext);
   return (
     <ProductContainer>
       <ProductContent>
         <ProductImg src={product?.image} />
         <ProductName>{product?.title}</ProductName>
-        <ProductRating 
-          value={product?.rating.rate}
-          readOnly
-            />
+        <div className="product-description">
+
+        </div>
+        <div>
+          <ProductRating value={product?.rating.rate}   readOnly  />
+          {product?.rating.rate}
+        </div>
         <PriceBefore>R$5500,00</PriceBefore>
         <PriceWithDiscount>R${product?.price.toFixed(2)}</PriceWithDiscount>
       </ProductContent>

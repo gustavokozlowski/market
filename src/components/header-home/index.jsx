@@ -1,7 +1,9 @@
 import { CartContext } from "../../contexts/cart.jsx";
+import { CartModal } from "../modal/index.jsx";
 import { useContext, useEffect } from "react";
 import empty from "../../assets/cart-icons/empty.svg";
 import full from "../../assets/cart-icons/full.svg";
+
 import {
   HeaderContainer,
   HeaderContent,
@@ -10,16 +12,21 @@ import {
   NavbarContent,
   CartIcon,
   LogoContainer,
-  StyledHashLink
+  StyledHashLink,
 } from "./styles.js";
-
+import { useState } from "react";
 
 export const HeaderHome = () => {
   const { cartItems } = useContext(CartContext);
- 
-  useEffect(() => {
-  }, [cartItems])
-  
+  const [isOpen, setIsOpen ] = useState(false);
+
+  const handleModal = () => {
+    setIsOpen(!isOpen)
+  }
+
+
+  useEffect(() => {}, [cartItems]);
+
   return (
     <HeaderContainer>
       <HeaderContent>
@@ -28,13 +35,18 @@ export const HeaderHome = () => {
         </LogoContainer>
         <NavbarContainer>
           <NavbarContent>
-            <StyledHashLink smooth to="/#products">Produtos</StyledHashLink>
-            <StyledHashLink smooth to="/#contact" >Contato</StyledHashLink>
+            <StyledHashLink smooth to="/#products">
+              Produtos
+            </StyledHashLink>
+            <StyledHashLink smooth to="/#contact">
+              Contato
+            </StyledHashLink>
             {cartItems.length > 0 ? (
-              <CartIcon src={full} />
+              <CartIcon onClick={handleModal} src={full} />
             ) : (
-              <CartIcon src={empty} />
+              <CartIcon onClick={handleModal} src={empty} />
             )}
+            <CartModal isOpen={isOpen} closeModal={handleModal} />
           </NavbarContent>
         </NavbarContainer>
       </HeaderContent>

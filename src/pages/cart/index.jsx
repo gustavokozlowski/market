@@ -1,5 +1,5 @@
 import {
-  CardContent,
+  CartContent,
   CartContainer,
   Paragraph,
   ProductImg,
@@ -16,7 +16,7 @@ import {
 export const Cart = () => {
   return (
     <CartContainer>
-      <CardContent>
+      <CartContent>
         <FormContainer>
           <SubTitle>Cálculo de frete</SubTitle>
           <Paragraph>Informe o seu CEP:</Paragraph>
@@ -26,11 +26,12 @@ export const Cart = () => {
               <Paragraph color="rgba(255, 255, 255, 1);">Consultar</Paragraph>
             </ButtonContainer>
           </FormContent>
+          <SubTitle>Itens</SubTitle>
         </FormContainer>
         <BoxContainer>
           <BoxContent></BoxContent>
         </BoxContainer>
-      </CardContent>
+      </CartContent>
     </CartContainer>
   );
 };

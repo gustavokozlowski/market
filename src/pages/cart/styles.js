@@ -8,7 +8,7 @@ export const CartContainer = styled.div`
   align-items: center;
   height: fit-content;
 `;
-export const CardContent = styled.main`
+export const CartContent = styled.main`
   background-color: aliceblue;
   display: grid;
   width: 100%;

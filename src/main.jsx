@@ -8,6 +8,7 @@ import '@smastrom/react-rating/style.css';
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <CartProvider>
+    
       <App />
       <GlobalStyle />
     </CartProvider>
