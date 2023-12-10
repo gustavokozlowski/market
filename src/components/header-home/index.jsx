@@ -18,7 +18,7 @@ import { useState } from "react";
 
 export const HeaderHome = () => {
   const { cartItems } = useContext(CartContext);
-  const [isOpen, setIsOpen ] = useState(false);
+  const [isOpen, setIsOpen ] = useState(true);
 
   const handleModal = () => {
     setIsOpen(!isOpen)
